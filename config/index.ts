@@ -1,18 +1,21 @@
 import type { AppInfo } from '@/types/app'
-export const APP_ID = `${process.env.NEXT_PUBLIC_APP_ID}`
-export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
-export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
-export const IS_WORKFLOW = `${process.env.NEXT_PUBLIC_APP_TYPE_WORKFLOW}` === 'true'
+
+// Configurações da API Dify (inseridas diretamente para teste)
+export const APP_ID = 'gvbBTYbSYGKotY5j'
+export const API_KEY = 'app-4hqurh1ytQvaRbh2vuJFrE9H' // Substitua pela sua API key real
+export const API_URL = 'https://udify.app'
+export const IS_WORKFLOW = false
+
+// Informações do aplicativo
 export const APP_INFO: AppInfo = {
-  title: 'Text Generator APP',
+  title: 'Assistente maximiza.AI',
   description: 'App description',
-  copyright: '',
+  copyright: '© 2024 maximiza.AI',
   privacy_policy: '',
-  default_language: 'en-US',
+  default_language: 'pt-BR',
 }
 
+// Configurações adicionais que já existiam no arquivo
 export const API_PREFIX = '/api'
-
 export const LOCALE_COOKIE_NAME = 'locale'
-
 export const DEFAULT_VALUE_MAX_LEN = 48
